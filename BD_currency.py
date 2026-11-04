@@ -16,7 +16,7 @@ model = load_model()
 
 confidence = st.slider("Confidence threshold", 0.1, 1.0, 0.25, 0.05)
 
-option = st.radio("Choose input method:", ["Camera", "Upload Image"])
+option = st.radio("Choose input method:", ["Upload Image","Camera"])
 
 if option == "Camera":
     uploaded_file = st.camera_input("Take a photo of your currency")
